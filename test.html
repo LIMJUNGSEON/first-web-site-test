@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>display 비교 예제</title>
+<style>
+  body { font-family: sans-serif; }
+  .box {
+    background: lightcoral;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 6px;
+  }
+
+  /* 1️⃣ block: 한 줄 전체 차지 */
+  .block div { display: block; }
+
+  /* 2️⃣ inline: 줄 안에 나란히 */
+  .inline div { display: inline; }
+
+  /* 3️⃣ flex: 가로 정렬 (한 줄) */
+  .flex { display: flex; gap: 10px; }
+
+  /* 4️⃣ grid: 격자 형태 */
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+
+  h2 { margin-top: 25px; }
+</style>
+</head>
+<body>
+
+<h2>1️⃣ display: block</h2>
+<div class="block">
+  <div class="box">HTML</div>
+  <div class="box">CSS</div>
+  <div class="box">JS</div>
+</div>
+
+<h2>2️⃣ display: inline</h2>
+<div class="inline">
+  <div class="box">HTML</div>
+  <div class="box">CSS</div>
+  <div class="box">JS</div>
+</div>
+
+<h2>3️⃣ display: flex</h2>
+<div class="flex">
+  <div class="box">HTML</div>
+  <div class="box">CSS</div>
+  <div class="box">JS</div>
+</div>
+
+<h2>4️⃣ display: grid</h2>
+<div class="grid">
+  <div class="box">HTML</div>
+  <div class="box">CSS</div>
+  <div class="box">JS</div>
+  <div class="box">SQL</div>
+  <div class="box">Python</div>
+  <div class="box">Node</div>
+</div>
+
+</body>
+</html>

@@ -1,18 +1,9 @@
 <!doctype html>
 <html>
 <head>
-<title>내가 공부를 배우는 이유 - html</title>
+<title>웹개발 풀스택 교육 - CSS</title>
 <meta charset="utf-8">
-<style>
-  a {
-    color:black;
-    text-decoration: none;
-  }
-  h1 {
-    font-size: 60px;
-    text-align: center;
-  }
-</style>
+<link rel="stylesheet" href="style.css"
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-V386RBBHF4"></script>
@@ -23,15 +14,16 @@
 
   gtag('config', 'G-V386RBBHF4');
 </script>
-<p>
-    <h1><a href="index.html">WEB</a></h1>
-<ol>
+   <h1><a href="index.html">WEB</a></h1>
+   <div id="grid">
+   <ol>
     <li><a href="./1.html">HTML</a></li>
     <li><a href="./2.html">CSS</a></li>
     <li><a href="./3.html">JavaScript</a></li>
-</ol>
-<h2>index</h2>
-<p>🟠 장점
+  </ol>
+  <div id="article">
+    <h2>index</h2>
+  <p>🟠 장점
 테이블을 검색하는 속도와 성능이 향상된다. 기존 where문을 사용할 때 테이블 전체를 조건과 비교하는 Full Table Scan 작업이 필요한데, 인덱스 사용시 데이터가 정렬된 형태로 있기 때문에 데이터를 빠르게 찾을 수 있다.
 
 🟠 단점
@@ -86,27 +78,20 @@ server process가 구문 분석 과정을 마친 후 database buffer cache 에 �
 
 index가 있는 경우 where절의 조건 컬럼이 인덱스 키로 생성되어있는지 확인 후 인덱스에 조건에 부합하는 정보가 어떤 ROWID를 가지고 있는지 확인 후 ROWID에 있는 블럭을 찾아가 해당 블럭만 buffer cache에 복사한다.</p>
 </p>
-<p>
-    <div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://web-1-7mpjla2zgb.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+  <p>
+      <div id="disqus_thread"></div>
+  <script>
+      (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://web-1-7mpjla2zgb.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </p>
+</div>
 <!-- Tawk.to Live Chat -->
 <script type="text/javascript">
   var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
@@ -120,6 +105,5 @@ index가 있는 경우 where절의 조건 컬럼이 인덱스 키로 생성되�
     s0.parentNode.insertBefore(s1, s0);
   })();
 </script>
-</body>
 </body>
 </html>
