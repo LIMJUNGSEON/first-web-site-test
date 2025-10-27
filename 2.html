@@ -14,7 +14,18 @@
 
   gtag('config', 'G-V386RBBHF4');
 </script>
-   <h1><a href="index.html">WEB</a></h1>
+<body>
+    <h1><a href="index.html">WEB</a></h1>
+    <input type="button" value="night" onclick="
+      document.querySelector('body').style.backgroundColor='black';
+      document.querySelector('body').style.color='white';
+      document.querySelectorAll('a').forEach(a => a.style.color='white');
+   ">
+    <input type="button" value="day" onclick="
+      document.querySelector('body').style.backgroundColor='white';
+      document.querySelector('body').style.color='black';
+      document.querySelectorAll('a').forEach(a => a.style.color='black');
+   ">
    <div id="grid">
    <ol>
     <li><a href="./1.html">HTML</a></li>
